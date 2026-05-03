@@ -1,0 +1,5 @@
+{
+    "java.project.sourcePaths": ["BackEnd/src"],
+    "java.project.outputPath": "BackEnd/target/classes",
+    "java.project.referencedLibraries": []
+}
