@@ -1,0 +1,6 @@
+* text=auto
+*.java text eol=lf charset=utf-8
+*.properties text eol=lf charset=utf-8
+*.sql text eol=lf charset=utf-8
+*.xml text eol=lf charset=utf-8
+*.md text eol=lf charset=utf-8

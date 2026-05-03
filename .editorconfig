@@ -1,0 +1,30 @@
+# EditorConfig ayuda a mantener estilos de codificación consistentes para múltiples desarrolladores
+# en el mismo proyecto en varios editores y IDEs.
+
+root = true
+
+# Todos los archivos
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Archivos Java
+[*.java]
+indent_style = space
+indent_size = 4
+
+# Archivos XML/POM
+[*.xml]
+indent_style = space
+indent_size = 4
+
+# Archivos SQL
+[*.sql]
+indent_style = space
+indent_size = 2
+
+# Archivos Markdown
+[*.md]
+trim_trailing_whitespace = false

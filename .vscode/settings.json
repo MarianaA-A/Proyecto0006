@@ -1,0 +1,14 @@
+{
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
+  "java.jdt.ls.vmargs": "-Dfile.encoding=UTF-8",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSave": true
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools",
+    "editor.formatOnSave": false
+  },
+  "editor.renderWhitespace": "selection"
+}
