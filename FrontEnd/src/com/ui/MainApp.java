@@ -178,7 +178,6 @@ public class MainApp extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Configurar UTF-8 para salida de consola
         try {
             System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
             System.setErr(new PrintStream(System.err, true, StandardCharsets.UTF_8));

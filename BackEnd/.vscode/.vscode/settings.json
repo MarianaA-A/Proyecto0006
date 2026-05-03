@@ -10,5 +10,6 @@
     "editor.defaultFormatter": "mtxr.sqltools",
     "editor.formatOnSave": false
   },
-  "editor.renderWhitespace": "selection"
+  "editor.renderWhitespace": "selection",
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

@@ -1,0 +1,6 @@
+com\backend\model\Docente.class
+com\backend\db\SchemaRunner.class
+com\backend\dao\DocenteDAO.class
+com\backend\dao\DocenteDAOImpl.class
+com\backend\exception\DAOException.class
+com\backend\db\MySQLConnection.class

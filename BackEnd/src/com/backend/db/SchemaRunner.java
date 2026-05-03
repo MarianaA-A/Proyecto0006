@@ -9,7 +9,6 @@ public class SchemaRunner {
     public static void main(String[] args) {
         try (Connection c = getAdminConnection()) {
             runSqlFile(c, "BackEnd/sql/schema.sql");
-            // After creating DB, connect to the actual DB to run seed
             try (Connection c2 = MySQLConnection.getConnection()) {
                 runSqlFile(c2, "BackEnd/sql/seed.sql");
             }
@@ -21,7 +20,6 @@ public class SchemaRunner {
     }
 
     private static Connection getAdminConnection() throws Exception {
-        // connect to server without specifying DB to allow CREATE DATABASE
         String host = System.getenv("MYSQL_HOST");
         String port = System.getenv("MYSQL_PORT");
         String user = System.getenv("MYSQL_USER");

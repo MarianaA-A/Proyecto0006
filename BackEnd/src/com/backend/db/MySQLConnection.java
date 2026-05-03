@@ -19,7 +19,6 @@ public class MySQLConnection {
                 String user = System.getenv("MYSQL_USER");
                 String pass = System.getenv("MYSQL_PASS");
 
-                // fallback to BackEnd/config.properties if present
                 try (InputStream is = new FileInputStream("BackEnd/config.properties")) {
                     Properties p = new Properties();
                     p.load(is);

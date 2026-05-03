@@ -1,6 +1,6 @@
-# BackEnd - Gestión de Docentes (2007-2013)
+# BackEnd - Acceso a Datos y Modelo
 
-Este módulo contiene la lógica de acceso a datos (DAO), modelo de Docentes y conexión a MySQL.
+Módulo backend que proporciona acceso a datos (DAO), modelo de Docentes y conexión a MySQL.
 
 ## Estructura
 
@@ -8,6 +8,7 @@ Este módulo contiene la lógica de acceso a datos (DAO), modelo de Docentes y c
 - `src/com/backend/dao/DocenteDAO.java` — Interfaz del DAO
 - `src/com/backend/dao/DocenteDAOImpl.java` — Implementación JDBC del DAO (MySQL)
 - `src/com/backend/db/MySQLConnection.java` — Conexión a MySQL (JDBC)
+- `src/com/backend/db/SchemaRunner.java` — Utilidad para inicializar base de datos
 - `src/com/backend/exception/DAOException.java` — Excepción personalizada
 - `sql/schema.sql` — Script de creación de la base de datos y tabla `docentes`
 - `sql/seed.sql` — Script de inserción con 5 registros de ejemplo
@@ -43,6 +44,15 @@ O desde Java con una conexión JDBC (las clases del módulo realizan la conexió
 ```bash
 cd BackEnd
 mvn clean package
+```
+
+## Inicializar Base de Datos
+
+Para crear la base de datos y cargar datos iniciales:
+
+```bash
+cd BackEnd
+mvn exec:java -Dexec.mainClass="com.backend.db.SchemaRunner"
 ```
 
 ## Dependencias
